@@ -1,0 +1,128 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:"poppins",sans-serif;
+    color: #333;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    padding: 15px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    z-index: 1000;
+}
+
+.logo{
+    font-weight: 700;
+    font-size: 22px;
+    color: #0056b3;
+    text-align: center;
+}
+nav a{
+  margin-left: 20px;  
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.bnt-header{
+    background: #0056b3;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 5px;
+}
+.banner{
+    height: 100vh;
+    background: linear-gradient(to right,#0056b3,#0af);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+.banner h1 {
+    font-size: 42px;
+}
+.btn{
+    display: inline-block;
+    background: #0056b3;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+section{
+    padding: 120px 8% 80px;
+    text-align: center;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+.card{
+    width: 260px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+.card:hover{
+    transform: translateY(-6px);
+    background: #0056b3;
+    color: white;
+}
+.banner-interno{
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+}
+.banner-interno::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(0,0,0,0.5);
+}
+.banner-interno div{
+    position: relative;
+    z-index: 2;
+}
+.medico-foto{
+    width: 180px;
+    border-radius: 100px;
+    margin: 20px 0;
+}
+form input,form select,form textarea{
+    width: 100px;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid#ccc;
+}
+footer{
+    background: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
