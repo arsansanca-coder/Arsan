@@ -10,28 +10,25 @@
 </head>
 <body>
     
-<style>
-
-        h1, h2{
+    <style>
+        body { background-color: #f8f9fa; }
+        h1, h2 {
             text-align: center;
             background-color: blueviolet;
             color: white;
-            margin-left: 400px;
-            margin-right: 400px;
             border-radius: 40px;
             padding: 8px;
-            margin-top: -10px;
         }
-
-
-         p{
-            
-            margin: 8px 380px;
+        p {
             padding: 15px;
             border-radius: 40px;
         }
-
-        .btn a{
+        .info-section {
+            background-color: rgba(255,255,255,0.8);
+            margin: 0 auto;
+            max-width: 800px;
+        }
+        .btn-custom a {
             text-decoration: none;
             border: 1px solid black;
             padding: 10px 15px;
@@ -39,17 +36,29 @@
             color: white;
             border-radius: 30px;
         }
-
-        
-        body{
-            background-image: url(../img/Ginecologia.jpg);
-        }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Clínica Moderna</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Clínica Moderna</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../especialidade.html">Especialidade</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../agendamento.html">Agendar Consulta</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container pt-5 mt-3">
+            <h1>Clínica Moderna</h1>
+        </div>
     </header><br>
     
     <section class="banner-interno"
@@ -64,9 +73,9 @@
         </section>
 
         
-    <section class="btn">
+    <section class="btn-custom text-center py-4">
         <h2>Procedimento</h2>
-        <p>Testes e avaliaçao completa.</p>
+        <p>Testes e avaliação completa.</p>
         <a href="../agendamento.html" class="btn">Agendar Consulta</a>
     </section>
 

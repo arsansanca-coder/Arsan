@@ -11,17 +11,24 @@
 
 <body class="pagina-interna">
     
-    <header> 
-        <div class="logo">Clínica Moderna</div>
-        <nav style="text-align: right; margin-right: -85px;">
-             <a href="index.html" class="btn-header" style="border: 1px solid black; padding: 10px 15px; border-radius: 30px; background-color: blue; color: white;">Início</a>
-            <a href="especialidade.html" class="btn-header" style="border: 1px solid black; padding: 10px 15px; border-radius: 30px; background-color: blue; color: white;">Especialidade</a>
-            <a href="equipe.html" class="btn-header" style="border: 1px solid black; padding: 10px 15px; border-radius: 30px; background-color: blue; color: white;">Equipe</a>
-        <a href="Mapa.html" class="button" style="border: 1px solid black; padding: 10px 15px; border-radius: 30px; background-color: blue; color: white;">Mapa</a>
-        <a href="autor.html" class="button" style="border: 1px solid black; padding: 10px 15px; border-radius: 30px; background-color: blue; color: white;">Autor</a>
-        
-        
-    </nav>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Clínica Moderna</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="especialidade.html">Especialidade</a></li>
+                        <li class="nav-item"><a class="nav-link" href="equipe.html">Equipe</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Mapa.html">Mapa</a></li>
+                        <li class="nav-item"><a class="nav-link" href="autor.html">Autor</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <section class="banner-interno"
@@ -32,37 +39,44 @@
     </div>
     </section><br>
 
-    <form action="https://formsubmit.co/Suniciosanca97@gmail.com"
-    method="post" style="width: 500px; margin: auto;" >
-    <fieldset>
-    
-    <input type="text" class="form-control" placeholder="Nome" required>
-    
-    <input type="email" class="form-control" placeholder="Email" required>
-    
-    <input type="tel" class="form-control" placeholder="Telefone" required>
-
-    <input type="date" name="Data" required>
-    
-    <input type="time" name="Horario" required>
-   
-    <select name="Especialidade:" required >
-        <option value="">Escolha a Especialidade</option>
-        <option>Cardiologia</option>
-         <option>Ortopedia</option>
-          <option>Pediatria</option>
-           <option>Ginecologia</option>
-            <option>Dermatologia</option>
-             <option>Clínico Geral</option>
-    </select> <br>
-        
-    <textarea class="form-control" rows="4" cols="50"
-    placeholder="Observaçoes"></textarea><br>
-    
-    <button type="submit" class="btn" style="margin-left: 35%; margin-bottom: 15px;">Confirmar
-         Agendamento</button>
-         </fieldset>
-    </form><br>
+    <div class="container mt-5 pt-5">
+        <form action="https://formsubmit.co/Suniciosanca97@gmail.com" method="post">
+            <div class="row g-3">
+                <div class="col-12">
+                    <input type="text" class="form-control" placeholder="Nome" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="tel" class="form-control" placeholder="Telefone" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="date" name="Data" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="time" name="Horario" class="form-control" required>
+                </div>
+                <div class="col-12">
+                    <select name="Especialidade" class="form-select" required>
+                        <option value="">Escolha a Especialidade</option>
+                        <option>Cardiologia</option>
+                        <option>Ortopedia</option>
+                        <option>Pediatria</option>
+                        <option>Ginecologia</option>
+                        <option>Dermatologia</option>
+                        <option>Clínico Geral</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <textarea class="form-control" rows="4" placeholder="Observações"></textarea>
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary">Confirmar Agendamento</button>
+                </div>
+            </div>
+        </form>
+    </div>
 
     <footer>
     <p>&copy; 2026 Clínica Moderna | Todos os direitos reservados</p>

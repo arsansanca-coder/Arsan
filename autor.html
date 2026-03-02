@@ -11,22 +11,31 @@
 </head>
 <body>
     
-    <nav style="margin-top: 8px; text-align: right; margin-right: -85px;">
-        <a href="index.html" class="btn-header" style="border: 1px solid black; padding: 10px 15px; border-radius: 30px; background-color: blue; color: white;">Início</a>
-            <a href="especialidade.html" class="btn-header" style="border: 1px solid black; padding: 10px 15px; border-radius: 30px; background-color: blue; color: white;">Especialidade</a>
-            <a href="equipe.html" class="btn-header" style="border: 1px solid black; padding: 10px 15px; border-radius: 30px; background-color: blue; color: white;">Equipe</a>
-        <a href="agendamento.html" class="btn-header" style="border: 1px solid black; padding: 10px 15px; border-radius: 30px; background-color: blue; color: white;">Agendar</a>
-        <a href="Mapa.html" class="button" style="border: 1px solid black; padding: 10px 15px; border-radius: 30px; background-color: blue; color: white;">Mapa</a>
-            </nav> <br>
-
+    <!-- use responsive bootstrap navbar instead of inline nav -->
     <header>
-        <h2 style="color: blue;">Clínica Moderna</h2>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Clínica Moderna</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="especialidade.html">Especialidade</a></li>
+                        <li class="nav-item"><a class="nav-link" href="equipe.html">Equipe</a></li>
+                        <li class="nav-item"><a class="nav-link" href="agendamento.html">Agendar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Mapa.html">Mapa</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-    <br>
-    <div>
-        <h2 style="margin-top: 80px; margin-left: 32px;">Sobre o Autor.</h2>
+    <div class="container mt-5 pt-5">
+        <h2 class="mt-3">Sobre o Autor</h2>
     </div>
-    <div class="card shadow text-center p-4"> 
+    <div class="container my-4">
+        <div class="card shadow text-center p-4">
         <div class="card-body"> 
             <img src=" img/Nisio.jpg" width="200px" height="200px" class="medico-foto"> 
             <h2>Sunicio Sanca</h2> 
@@ -39,9 +48,9 @@
             <p>Suniciosanca97@gmail.com</p>
             <hr> 
             <h5>Informações Acadêmica:</h5> 
-            <p><strong>Escola:</strong> Green Hard & Soft (GHS)</p> 
-         </div> 
-    </div>
+                <p><strong>Escola:</strong> Green Hard & Soft (GHS)</p>
+            </div>
+     </div>
     <footer>
         <p>&copy; 2026 | Informações Sobre o Autor.</p>
     </footer>
